@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.9a5cc5ee.chunk.css",
-    "main.js": "/static/js/main.86b1f5c9.chunk.js",
-    "main.js.map": "/static/js/main.86b1f5c9.chunk.js.map",
+    "main.css": "/static/css/main.bded5be6.chunk.css",
+    "main.js": "/static/js/main.53aaa48f.chunk.js",
+    "main.js.map": "/static/js/main.53aaa48f.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.68c76266.js",
     "runtime-main.js.map": "/static/js/runtime-main.68c76266.js.map",
-    "static/js/2.0f97b544.chunk.js": "/static/js/2.0f97b544.chunk.js",
-    "static/js/2.0f97b544.chunk.js.map": "/static/js/2.0f97b544.chunk.js.map",
+    "static/js/2.197eaf2e.chunk.js": "/static/js/2.197eaf2e.chunk.js",
+    "static/js/2.197eaf2e.chunk.js.map": "/static/js/2.197eaf2e.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.9a5cc5ee.chunk.css.map": "/static/css/main.9a5cc5ee.chunk.css.map",
-    "static/js/2.0f97b544.chunk.js.LICENSE.txt": "/static/js/2.0f97b544.chunk.js.LICENSE.txt",
+    "static/css/main.bded5be6.chunk.css.map": "/static/css/main.bded5be6.chunk.css.map",
+    "static/js/2.197eaf2e.chunk.js.LICENSE.txt": "/static/js/2.197eaf2e.chunk.js.LICENSE.txt",
+    "static/media/WhatsApp Image 2022-03-07 at 2.38.30 PM.e14d84aa.jpeg": "/static/media/WhatsApp Image 2022-03-07 at 2.38.30 PM.e14d84aa.jpeg",
+    "static/media/WhatsApp Image 2022-03-07 at 2.49.00 PM.89bedac2.jpeg": "/static/media/WhatsApp Image 2022-03-07 at 2.49.00 PM.89bedac2.jpeg",
+    "static/media/WhatsApp Image 2022-03-07 at 2.51.20 PM.d8de4f4c.jpeg": "/static/media/WhatsApp Image 2022-03-07 at 2.51.20 PM.d8de4f4c.jpeg",
     "static/media/index.css": "/static/media/service.83fd3d8e.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.68c76266.js",
-    "static/js/2.0f97b544.chunk.js",
-    "static/css/main.9a5cc5ee.chunk.css",
-    "static/js/main.86b1f5c9.chunk.js"
+    "static/js/2.197eaf2e.chunk.js",
+    "static/css/main.bded5be6.chunk.css",
+    "static/js/main.53aaa48f.chunk.js"
   ]
 }

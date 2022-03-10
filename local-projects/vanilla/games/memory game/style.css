@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.grid{
+    width: 80%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid .card{
+    width: 15%;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+.grid .card img{
+    width: 100%;
+    height: auto;
+}
+.grid .card img.right-choice{
+    border: 5px solid springgreen;
+}
+.grid .card img.wrong-choice{
+    border: 5px solid red;
+}
+#refresh{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #ff00c8;
+}

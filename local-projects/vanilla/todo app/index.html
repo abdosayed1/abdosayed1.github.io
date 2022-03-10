@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            width: 100%;
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            padding: 2rem 0;
+            text-transform: capitalize;
+        }
+        body{
+            background-color: #333;
+            color: #fff;
+        }
+        .container-todo{
+            padding: 1.5rem;
+        }
+        #todos{
+            list-style: none;
+            margin-bottom: 1rem;
+            text-transform: capitalize;
+        }
+        #todos li{
+            padding: .5rem 0;
+            border-bottom: 2px solid #111;
+        }
+        form{
+            width: 100%;
+        }
+        form input{
+            display: block;
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        form input[type = submit]{
+            border: none;
+            background-color: darkgreen;
+            color: #fff;
+            text-transform: capitalize;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand upper" href="#">vanilla</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item capitalize">
+                        <a class="nav-link active" aria-current="page" href="#">home</a>
+                    </li>
+                    <li class="nav-item capitalize">
+                        <a class="nav-link" href="#">main app</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+    </nav>
+
+    <h1 class="header">todo list</h1>
+    <div class="container-todo">
+        <ul id="todos"></ul>
+
+        <form>
+            <input type="text" name="todo">
+            <input type="submit" value="add todo">
+        </form>
+    </div>
+
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>

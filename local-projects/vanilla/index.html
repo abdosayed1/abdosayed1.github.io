@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand upper" href="#">vanilla</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item capitalize">
+                        <a class="nav-link active" aria-current="page" href="#">home</a>
+                    </li>
+                    <li class="nav-item capitalize">
+                        <a class="nav-link" href="#">main app</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+    </nav>
+
+    <!-- about page section -->
+    <div class="section">
+        <div class="container">
+            <h2 class="text-center display-3 upper">about</h2>
+            <p class="text-center lead capitalize">
+                this page is about local projects built using vanilla JS. here you will find apps like todo list and games.<br>
+                all functionality are built using only JS no framwork was used.<br>
+                i made sure that this bage is separate from the main portfolio, as it was built using react.<br>
+                you will find that this bage is using bootstrap but that does not interfere with any app you will find here. bootstrap was used for not waisting time in styling.<br>
+                all bootstrap markup is in this page and the navbar <small class="text-muted">so that you can navigate to this page or to the main <abbr title="Main App In The Navbar" class="initialism">portfolio</abbr></small>.
+            </p>
+        </div>
+    </div>
+
+    <!-- projects section -->
+    <div class="section">
+        <div class="container">
+            <h2 class="text-center display-3 upper">projects</h2>
+            <!-- regular apps -->
+            <div class="apps">
+                <h3 class="text-center display-4 upper text-muted">apps</h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="./images/todo-app.png" class="card-img-top" alt="todo list">
+                            <div class="card-body capitalize">
+                                <h5 class="card-title">todo list</h5>
+                                <p class="card-text">this is todo list that saves it's data in local storage. so you can refresh or close and reopen the page and the todos will still be there. you can delete the todo by clicking on it.</p>
+                                <a href="#" class="btn btn-primary">Go to app</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- games -->
+            <div class="apps">
+                <h3 class="text-center display-4 upper text-muted">games</h3>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="./images/car-puzzle.png" class="card-img-top" alt="todo list">
+                            <div class="card-body capitalize">
+                                <h5 class="card-title">car puzzle</h5>
+                                <p class="card-text">this is a car puzzle game. the object of the game is to assemble a car from the pieces on the left in less than 30s. you can drag and drop the pieces in the field. if the piece isn't in the right position it will return to the box on the left as tthe last piece. you can click on the hint button to see where the first piece from the box should go but it will cost you 3s. if the timer exceeds 30s you will not be able to drag any piece and you will have lost. to replay the game click in the lost message if you lost or refresh the page in any state.</p>
+                                <a href="#" class="btn btn-primary">Go to app</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6">
+                        <div class="card">
+                            <img src="./images/memory.png" class="card-img-top" alt="todo list">
+                            <div class="card-body capitalize">
+                                <h5 class="card-title">memory game</h5>
+                                <p class="card-text">the object of this game is to match images.</p>
+                                <a href="#" class="btn btn-primary">Go to app</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

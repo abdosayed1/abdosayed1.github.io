@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../../css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand upper" href="#">vanilla</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item capitalize">
+                            <a class="nav-link active" aria-current="page" href="#">home</a>
+                        </li>
+                        <li class="nav-item capitalize">
+                            <a class="nav-link" href="#">main app</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="banner">
+            <div class="banner-container">
+                <img src="./images/image1.jpg" alt="" srcset="">
+            </div>
+        </div>
+        <!-- car puzzle container -->
+        <div class="game-container">
+            <div id="hintBtn">hint</div>
+            <div id="spentTime">00s:00</div>
+            <div class="startTimer">
+                <p>start the timer</p>
+            </div>
+            
+            <div id="msg" style="display: none;"></div>
+            <div class="container-1 drag-area"  id="puzzle-field">
+
+            </div>
+            <div class="container-1 pieces-container">
+                <div class="scroll-pieces drag-area" id="pieces-container">
+                    
+                </div>
+            </div>
+        </div>
+
+
+        <script src="../../js/bootstrap.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,541 @@
+/* general styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #EDDDC3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.game-container{
+    position: relative;
+    height: 100vh;
+}
+.container-1.drag-area#puzzle-field{
+    position: relative;
+    width: 80%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    margin-left: auto;
+}
+
+
+/* puzzle field */
+.container-1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    position: relative;
+}
+
+/* pieces that in the field */
+.container-1#puzzle-field .piece{
+    position: absolute;
+}
+
+.container-1#puzzle-field .belgian-nose{
+    transform: rotate(-90deg);
+    
+}
+
+.banner{
+    width: 100%;
+    padding: 20px;
+}
+.banner .banner-container{
+    width: 80%;
+    margin: 0 auto;
+}
+.banner .banner-container img{
+    width: 100%;
+}
+/* puzzle pieces area */
+.pieces-container{
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 20%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    padding: 100px 0;
+    overflow: hidden;
+}
+.pieces-container .scroll-pieces{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.pieces-container .piece{
+    width: 45%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    cursor: move;
+    height: 20%;
+}
+
+/* drag areas */
+.draging{
+    opacity: .5;
+}
+
+/* default screen  */
+.container-1#puzzle-field .front-left-tires{
+    width: 65px;
+    top: 154px;
+    left: 226px;
+    z-index: 1;
+}
+.container-1#puzzle-field .front-right-tires{
+    width: 65px;
+    top: 154px;
+    left: 325px;
+    z-index: 1;
+}
+.container-1#puzzle-field .back-left-tires{
+    width: 65px;
+    top: 435px;
+    left: 223px;
+    z-index: 1;
+}
+.container-1#puzzle-field .back-right-tires{
+    width: 65px;
+    top: 435px;
+    left: 327px;
+    z-index: 1;
+}
+.container-1#puzzle-field .left-sidepods{
+    width: 32px;
+    top: 325px;
+    left: 239px;
+    z-index: 2;
+}
+.container-1#puzzle-field .right-sidepods{
+    width: 32px;
+    top: 325px;
+    left: 344px;
+    z-index: 2;
+}
+.container-1#puzzle-field .passenger-seat{
+    width: 122px;
+    top: 266px;
+    left: 246px;
+    z-index: 3;
+}
+.container-1#puzzle-field .front-wings{
+    width: 160px;
+    top: 95px;
+    left: 228px;
+    z-index: 4;
+}
+.container-1#puzzle-field .belgian-nose{
+    width: 185px;
+    top: 150px;
+    left: 214px;
+    z-index: 5;
+}
+.container-1#puzzle-field .rear-wing{
+    width: 107px;
+    top: 496px;
+    left: 254px;
+    z-index: 6;
+}
+#spentTime{
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    padding: 10px 20px;
+    background-color: crimson;
+    color: #fff;
+    font-size: 1.5rem;
+}
+#hintBtn{
+    position: absolute;
+    padding: 10px 20px;
+    background-color: chartreuse;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    top: 10px;
+    left: 10px;
+    z-index: 9999;
+}
+
+
+
+@media screen and (max-width: 425px) {
+    .pieces-container{
+        width: 30%;
+    }
+    .container-1#puzzle-field .front-left-tires{
+        left: 66px;
+    }
+    .container-1#puzzle-field .front-right-tires{
+        left: 165px;
+    }
+    .container-1#puzzle-field .back-left-tires{
+        left: 63px;
+    }
+    .container-1#puzzle-field .back-right-tires{
+        left: 167px;
+    }
+    .container-1#puzzle-field .left-sidepods{
+        left: 79px;
+    }
+    .container-1#puzzle-field .right-sidepods{
+        left: 184px;
+    }
+    .container-1#puzzle-field .passenger-seat{
+        left: 86px;
+    }
+    .container-1#puzzle-field .front-wings{
+        left: 68px;
+    }
+    .container-1#puzzle-field .belgian-nose{
+        left: 54px;
+    }
+    .container-1#puzzle-field .rear-wing{
+        left: 94px;
+    }
+}
+@media screen and (min-width: 426px) and (max-width: 560px) {
+    .container-1#puzzle-field .front-left-tires{
+        left: 186px;
+    }
+    .container-1#puzzle-field .front-right-tires{
+        left: 285px;
+    }
+    .container-1#puzzle-field .back-left-tires{
+        left: 183px;
+    }
+    .container-1#puzzle-field .back-right-tires{
+        left: 287px;
+    }
+    .container-1#puzzle-field .left-sidepods{
+        left: 199px;
+    }
+    .container-1#puzzle-field .right-sidepods{
+        left: 304px;
+    }
+    .container-1#puzzle-field .passenger-seat{
+        left: 206px;
+    }
+    .container-1#puzzle-field .front-wings{
+        left: 188px;
+    }
+    .container-1#puzzle-field .belgian-nose{
+        left: 174px;
+    }
+    .container-1#puzzle-field .rear-wing{
+        left: 214px;
+    }
+}
+
+@media screen and (min-width: 561px) and (max-width: 768px) {
+    .container-1#puzzle-field .front-left-tires{
+        width: 65px;
+        top: 154px;
+        left: 226px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .front-right-tires{
+        width: 65px;
+        top: 154px;
+        left: 325px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .back-left-tires{
+        width: 65px;
+        top: 435px;
+        left: 223px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .back-right-tires{
+        width: 65px;
+        top: 435px;
+        left: 327px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .left-sidepods{
+        width: 32px;
+        top: 325px;
+        left: 239px;
+        z-index: 2;
+    }
+    .container-1#puzzle-field .right-sidepods{
+        width: 32px;
+        top: 325px;
+        left: 344px;
+        z-index: 2;
+    }
+    .container-1#puzzle-field .passenger-seat{
+        width: 122px;
+        top: 266px;
+        left: 246px;
+        z-index: 3;
+    }
+    .container-1#puzzle-field .front-wings{
+        width: 160px;
+        top: 95px;
+        left: 228px;
+        z-index: 4;
+    }
+    .container-1#puzzle-field .belgian-nose{
+        width: 185px;
+        top: 150px;
+        left: 214px;
+        z-index: 5;
+    }
+    .container-1#puzzle-field .rear-wing{
+        width: 107px;
+        top: 496px;
+        left: 254px;
+        z-index: 6;
+    }
+}
+
+@media screen and (min-width: 770px) and (max-width: 1124px){
+    .container-1#puzzle-field .front-left-tires{
+        width: 65px;
+        top: 154px;
+        left: 226px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .front-right-tires{
+        width: 65px;
+        top: 154px;
+        left: 325px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .back-left-tires{
+        width: 65px;
+        top: 435px;
+        left: 223px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .back-right-tires{
+        width: 65px;
+        top: 435px;
+        left: 327px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .left-sidepods{
+        width: 32px;
+        top: 325px;
+        left: 239px;
+        z-index: 2;
+    }
+    .container-1#puzzle-field .right-sidepods{
+        width: 32px;
+        top: 325px;
+        left: 344px;
+        z-index: 2;
+    }
+    .container-1#puzzle-field .passenger-seat{
+        width: 122px;
+        top: 266px;
+        left: 246px;
+        z-index: 3;
+    }
+    .container-1#puzzle-field .front-wings{
+        width: 160px;
+        top: 95px;
+        left: 228px;
+        z-index: 4;
+    }
+    .container-1#puzzle-field .belgian-nose{
+        width: 185px;
+        top: 150px;
+        left: 214px;
+        z-index: 5;
+    }
+    .container-1#puzzle-field .rear-wing{
+        width: 107px;
+        top: 496px;
+        left: 254px;
+        z-index: 6;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1124px) and (min-height: 1024px){
+    .container-1#puzzle-field .front-left-tires{
+        width: 180px;
+        top: 130px;
+        left: 226px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .front-right-tires{
+        width: 180px;
+        top: 130px;
+        left: 414px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .back-left-tires{
+        width: 180px;
+        top: 675px;
+        left: 223px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .back-right-tires{
+        width: 180px;
+        top: 675px;
+        left: 419px;
+        z-index: 1;
+    }
+    .container-1#puzzle-field .left-sidepods{
+        width: 61px;
+        top: 477px;
+        left: 276px;
+        z-index: 2;
+    }
+    .container-1#puzzle-field .right-sidepods{
+        width: 61px;
+        top: 481px;
+        left: 486px;
+        z-index: 2;
+    }
+    .container-1#puzzle-field .passenger-seat{
+        width: 244px;
+        top: 375px;
+        left: 288px;
+        z-index: 3;
+    }
+    .container-1#puzzle-field .front-wings{
+        width: 320px;
+        top: 20px;
+        left: 252px;
+        z-index: 4;
+    }
+    .container-1#puzzle-field .belgian-nose{
+        width: 370px;
+        top: 140px;
+        left: 224px;
+        z-index: 5;
+    }
+    .container-1#puzzle-field .rear-wing{
+        width: 214px;
+        top: 835px;
+        left: 304px;
+        z-index: 6;
+    }
+}
+
+@media screen and (min-width: 1125px) {
+    .container-1#puzzle-field .front-left-tires{
+        transform: rotate(90deg);
+        width: 107px;
+        left: 725px;
+        top: 267px;
+    }
+    .container-1#puzzle-field .front-right-tires{
+        transform: rotate(90deg);
+        width: 107px;
+        left: 725px;
+        top: 426px;
+    }
+    .container-1#puzzle-field .back-left-tires{
+        transform: rotate(90deg);
+        width: 114px;
+        left: 200px;
+        top: 232px;
+    }
+    .container-1#puzzle-field .back-right-tires{
+        transform: rotate(90deg);
+        width: 114px;
+        left: 200px;
+        top: 426px;
+    }
+    .container-1#puzzle-field .left-sidepods{
+        transform: rotate(90deg);
+        width: 64px;
+        left: 389px;
+        top: 175px;
+    }
+    .container-1#puzzle-field .right-sidepods{
+        transform: rotate(90deg);
+        width: 64px;
+        left: 389px;
+        top: 371px;
+    }
+    .container-1#puzzle-field .passenger-seat{
+        transform: rotate(90deg);
+        width: 229px;
+        left: 303px;
+        top: 170px;
+    }
+    .container-1#puzzle-field .front-wings{
+        transform: rotate(90deg);
+        width: 300px;
+        left: 725px;
+        top: 344px;
+    }
+    .container-1#puzzle-field .belgian-nose{
+        transform: rotate(0);
+        width: 300px;
+        left: 639px;
+        top: 350px;
+    }
+    .container-1#puzzle-field .rear-wing{
+        transform: rotate(90deg);
+        width: 200px;
+        left: 50px;
+        top: 333px;
+    }
+}
+#msg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+.msg{
+    position: absolute;
+    width: 50%;
+    padding: 20px 50px ;
+    background-color: darkgoldenrod;
+    color: #fff;
+    z-index: 999999;
+    font-size: 1.25rem;
+    text-align: center;
+    left: 25%;
+    top: 25%;
+    text-transform: capitalize;
+    /* animation-name: opacityAnimation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; */
+}
+
+.startTimer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 3, 3, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+}
+.startTimer p{
+    padding: 20px 50px;
+    background-color: rgb(60, 255, 0);
+    color: #fff;
+}
+.hint{
+    opacity: .5;
+}
+@keyframes opacityAnimation {
+    0% {opacity: 0;}
+    50% {opacity: 1;}
+    100% {opacity: 0;}
+  }
