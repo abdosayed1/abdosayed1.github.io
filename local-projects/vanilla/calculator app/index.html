@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand upper" href="#">vanilla</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item capitalize">
+                        <a class="nav-link active" aria-current="page" href="#">home</a>
+                    </li>
+                    <li class="nav-item capitalize">
+                        <a class="nav-link" href="#">main app</a>
+                    </li>
+                </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="calc-container">
+        <div id="calc-app">
+            <div id="result"></div>
+            <div id="keyboard">
+                <ul id="controllers">
+                    <li id="clear"><p>C</p></li>
+                    <li id="backspace"><p>CE</p></li>
+                    <li id="percent"><p>%</p></li>
+                </ul>
+                <ul id="nums">
+                    <li data-value="7" id="seven"><p>7</p></li>
+                    <li data-value="8" id="eight"><p>8</p></li>
+                    <li data-value="9" id="nine"><p>9</p></li>
+                    <li data-value="4" id="four"><p>4</p></li>
+                    <li data-value="5" id="five"><p>5</p></li>
+                    <li data-value="6" id="sex"><p>6</p></li>
+                    <li data-value="1" id="one"><p>1</p></li>
+                    <li data-value="2" id="two"><p>2</p></li>
+                    <li data-value="3" id="three"><p>3</p></li>
+                    <li data-value="0" id="zero"><p>0</p></li>
+                </ul>
+            </div>
+            <ul id="operators">
+                <li data-sign="/" id="division"><p>&#247;</p></li>
+                <li data-sign="*" id="multiply"><p>&times;</p></li>
+                <li data-sign="-" id="subtract"><p>-</p></li>
+                <li data-sign="+" id="addition"><p>+</p></li>
+                <li data-sign="=" id="resultsign"><p>=</p></li>
+            </ul>
+        </div>
+    </div>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>
